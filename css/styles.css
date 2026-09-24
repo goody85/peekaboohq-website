@@ -167,6 +167,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   background: rgba(251, 250, 247, 0.94);
   backdrop-filter: blur(8px);
   border-bottom: 1.5px solid rgba(18, 58, 64, 0.08);
+  overflow: visible;
 }
 .nav {
   display: flex;
@@ -174,6 +175,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   justify-content: space-between;
   gap: 1rem;
   min-height: var(--header-h);
+  overflow: visible;
 }
 .brand {
   display: flex;
@@ -181,10 +183,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
   gap: 0.55rem;
   text-decoration: none;
   color: var(--ink);
+  flex-shrink: 0;
 }
 .brand:hover { color: var(--ink); }
 .brand__mark { width: 44px; height: 44px; flex-shrink: 0; }
-.brand__word { height: 28px; width: auto; }
+.brand__word { height: 28px; width: auto; flex-shrink: 0; max-width: none; }
 
 .nav__links {
   display: flex;
@@ -253,7 +256,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 
 @media (max-width: 900px) {
   .nav-toggle { display: flex; }
-  .brand__word { height: 24px; }
+  .brand__word { height: 22px; }
+  .brand__mark { width: 40px; height: 40px; }
   .nav__panel {
     display: none;
     position: absolute;
@@ -949,4 +953,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
   padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0,0,0,0);
   border: 0;
+}
+
+
+@media (max-width: 380px) {
+  .brand__word { height: 18px; }
+  .brand__mark { width: 36px; height: 36px; }
+  .brand { gap: 0.4rem; }
 }
