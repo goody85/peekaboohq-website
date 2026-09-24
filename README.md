@@ -38,7 +38,8 @@ Shared: `css/styles.css`, `js/main.js`, `assets/` (locked logos + badges).
 
 - Palette + structure: cream Gymfinity *structure* (see `theme.html`)
 - Logos: locked PNGs only — do not invent marks
-- Hero: “Your rota, built in seconds.” — no Free Forever badge on marketing heroes
+- Hero: “Your rota, built in seconds.” — HTML sticker panel + `assets/hero-staff.png`; UK hosted · Ofsted-ready only (no Free Forever / Start free on heroes)
+- Borders: ~7px white sticker borders; chips/eyebrows; sparse confetti on page heroes
 - Audience: nursery owners/managers; PWA app link only (no store badges)
 
 Peekaboohq Ltd · United Kingdom

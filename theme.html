@@ -40,10 +40,10 @@
   </header>
 
   <main id="main">
-    <section class="page-hero">
+    <section class="page-hero page-hero--confetti">
       <div class="container">
         <p class="eyebrow">Internal · Brand</p>
-        <h1>Cream sticker track</h1>
+        <h1 class="display-outline">Cream sticker track</h1>
         <p class="theme-one-liner mt-2">Gymfinity structure (thick white borders, chunky type, sticker badges on cream) — not Gymfinity costume (plum carnival grounds, kids-club colour story).</p>
       </div>
     </section>
@@ -87,6 +87,31 @@
 
     <section class="section section--soft">
       <div class="container">
+        <h2 class="mb-1">Strengthened sticker tokens</h2>
+        <p class="lead mb-2">CSS custom properties that push Gymfinity structure harder across every page.</p>
+        <div class="compare-wrap">
+          <table class="token-table">
+            <thead>
+              <tr><th>Token</th><th>Value</th><th>Use</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><code>--border-white</code></td><td>7px solid #FFF</td><td>Cards, buttons, badges, hero sticker</td></tr>
+              <tr><td><code>--border-white-sm</code></td><td>5px solid #FFF</td><td>Chips, icons</td></tr>
+              <tr><td><code>--outline-soft</code></td><td>2px ink @ 10%</td><td>Edge read on cream</td></tr>
+              <tr><td><code>--shadow-sticker</code></td><td>0 5px 0 ink @ 7%</td><td>Chunky lift under stickers</td></tr>
+              <tr><td><code>--radius</code></td><td>26px</td><td>Panels / cards</td></tr>
+              <tr><td><code>.eyebrow</code> / <code>.chip</code></td><td>Pill stickers</td><td>Section &amp; card labels</td></tr>
+              <tr><td><code>.display-outline</code></td><td>White stroke sim</td><td>Key page H1s</td></tr>
+              <tr><td><code>.hero-sticker</code></td><td>HTML composition</td><td>Home hero — staff + UK/Ofsted only</td></tr>
+              <tr><td>Confetti</td><td><code>.hero--confetti</code></td><td>Sparse accent dots on heroes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
         <h2 class="mb-1">Typography</h2>
         <p class="lead mb-2">Poppins for headlines. Source Sans 3 for body. Google Fonts OK.</p>
         <div class="type-sample">
@@ -100,20 +125,23 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--soft">
       <div class="container">
         <h2 class="mb-1">Borders &amp; cards</h2>
-        <p class="lead mb-2">Signature structure: thick white borders on cards, badges and buttons, sitting on cream paper — with a light ink outline so stickers read on pale grounds.</p>
+        <p class="lead mb-2">Signature structure: ~7px white borders on cards, badges and buttons, sitting on cream paper — with a soft ink outline and sticker drop so panels feel chunky, not thin SaaS.</p>
         <div class="grid grid--3">
           <div class="card">
+            <span class="chip">Default</span>
             <h3>Card</h3>
-            <p>White fill, ~5px white border, soft shadow. Default panel.</p>
+            <p>White fill, thick white border, soft shadow + sticker drop. Default panel.</p>
           </div>
           <div class="card card--soft">
+            <span class="chip chip--accent">Featured</span>
             <h3>Soft tint</h3>
             <p>Mint-tinted fill for featured panels — still sticker-bordered.</p>
           </div>
           <div class="card card--tint">
+            <span class="chip chip--cta">Accent</span>
             <h3>Brand-light</h3>
             <p>Eyebrow / accent surfaces using #93D0BD.</p>
           </div>
@@ -122,6 +150,7 @@
           <a class="btn btn--primary" href="#">Primary CTA</a>
           <a class="btn btn--secondary" href="#">Secondary</a>
           <a class="btn btn--accent" href="#">Accent</a>
+          <span class="eyebrow" style="margin:0;">Eyebrow chip</span>
           <span class="trust__badge">
             <img src="assets/uk-hosted-shield.png" width="36" height="36" alt="">
             Sticker badge
@@ -130,7 +159,7 @@
       </div>
     </section>
 
-    <section class="section section--soft">
+    <section class="section">
       <div class="container">
         <h2 class="mb-1">Locked marks</h2>
         <p class="lead mb-2">Use files from brand lock — do not invent alternate parrots or circuit-board birds.</p>
@@ -162,11 +191,13 @@
             <h3>Do — structure</h3>
             <ul style="display:grid;gap:0.5rem;list-style:disc;padding-left:1.25rem;">
               <li>Cream (#FBFAF7) paper grounds</li>
-              <li>Thick white sticker borders on cards &amp; badges</li>
-              <li>Chunky Poppins headlines</li>
+              <li>Thick (~7px) white sticker borders on cards &amp; badges</li>
+              <li>Chunky Poppins headlines with optional white outline</li>
+              <li>Eyebrow / chip pill stickers; sparse confetti on heroes</li>
               <li>Teal CTA / accent system</li>
               <li>Locked bird + wordmark only</li>
-              <li>Badge strip: UK hosted · Ofsted-ready</li>
+              <li>Hero badges: UK hosted · Ofsted-ready only (no Free Forever)</li>
+              <li>Home hero: HTML sticker panel + cropped staff photo</li>
             </ul>
           </div>
           <div class="dont">
