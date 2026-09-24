@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a demo — Peekaboo HQ</title>
+  <meta name="description" content="Book a Peekaboo HQ demo or send an enquiry. Built for UK nursery owners and managers.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img class="brand__mark" src="assets/HEAD-LOGO-app-icon-1024.png" width="44" height="44" alt="">
+        <img class="brand__word" src="assets/WORDMARK-peekaboo.png" alt="Peekaboo">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu">
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav__panel" id="nav-panel">
+        <nav class="nav__links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a href="theme.html">Theme</a>
+        </nav>
+        <div class="nav__cta">
+          <a class="btn btn--secondary" href="https://app.peekaboohq.com">Log in</a>
+          <a class="btn btn--primary" href="contact.html">Book a demo</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" id="demo">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Book a demo</h1>
+        <p class="lead">Tell us a little about your setting. We’ll reply with a short slot to walk through rotas, parent updates and billing — no hard sell.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container" style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:2rem;align-items:start;">
+        <div>
+          <div class="form-card" id="form-card">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Work email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="form-group">
+                <label for="setting">Setting type</label>
+                <select id="setting" name="setting" required>
+                  <option value="">Select…</option>
+                  <option>Childminder</option>
+                  <option>Small nursery</option>
+                  <option>Large nursery</option>
+                  <option>Nursery group</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">What would you like to cover?</label>
+                <textarea id="message" name="message" required placeholder="e.g. Smart Rota for two rooms, parent updates, billing"></textarea>
+              </div>
+              <button class="btn btn--primary btn--lg" type="submit">Send enquiry</button>
+            </form>
+          </div>
+          <div class="form-success" id="form-success" role="status" tabindex="-1">
+            <h2>Thanks — we’ve got that</h2>
+            <p>This page is static, so nothing was posted to a server. You can open your email client to send the enquiry, or email us directly.</p>
+            <div class="btn-row">
+              <a class="btn btn--primary" data-mailto href="mailto:hello@peekaboohq.com">Open email draft</a>
+              <a class="btn btn--secondary" href="mailto:hello@peekaboohq.com">hello@peekaboohq.com</a>
+            </div>
+          </div>
+        </div>
+        <aside>
+          <div class="card card--soft">
+            <h3>Prefer to explore first?</h3>
+            <p>Log in to the app (PWA — no App Store required) or browse features at your own pace.</p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="https://app.peekaboohq.com">Try Peekaboo</a>
+              <a class="btn btn--secondary" href="features.html">See how it works</a>
+            </div>
+          </div>
+          <div class="card mt-2">
+            <h3>Company</h3>
+            <p class="mb-0">Peekaboohq Ltd<br>United Kingdom<br><a href="mailto:hello@peekaboohq.com">hello@peekaboohq.com</a><br><a href="https://peekaboohq.com/">peekaboohq.com</a></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    @media (max-width: 800px) {
+      #main .section > .container { grid-template-columns: 1fr !important; }
+    }
+  </style>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="footer__brand" href="index.html">
+            <img src="assets/HEAD-LOGO-app-icon-1024.png" width="36" height="36" alt="">
+            <img class="word" src="assets/WORDMARK-peekaboo.png" alt="Peekaboo">
+          </a>
+          <p>Peekaboo HQ — nursery management for UK owners and managers. Rotas, updates and billing in one place.</p>
+          <p><a href="https://peekaboohq.com/">peekaboohq.com</a> · <a href="https://app.peekaboohq.com">App login</a></p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="theme.html">Theme</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li>Peekaboohq Ltd</li>
+            <li>United Kingdom</li>
+            <li><a href="mailto:hello@peekaboohq.com">hello@peekaboohq.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Peekaboohq Ltd. All rights reserved.</span>
+        <span>Peekaboo HQ · UK hosted</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
